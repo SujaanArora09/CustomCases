@@ -16,7 +16,7 @@ export const formatPrice = (price: number) => {
 }
 
 export function constructMetadata({
-  title = 'Got`U`Covered',
+  title = 'Got_U_Covered',
   description = 'custom phone cases',
   image = '/thumbnail.png',
   icons = '/favicon.ico',
@@ -36,6 +36,6 @@ export function constructMetadata({
     },
     
     icons,
-    metadataBase: new URL("http://localhost:3000")
+    metadataBase: new URL("https://gotucovered.vercel.app")
   }
 }

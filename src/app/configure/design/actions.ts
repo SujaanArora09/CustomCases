@@ -23,5 +23,3 @@ export async function saveConfig({
     data: { color, finish, material, model },
   })
 }
-
-// module "C:/Visual Studio Projects/Custom Skins Store/eleganza/node_modules/.pnpm/@prisma+client@5.14.0_prisma@5.14.0/node_modules

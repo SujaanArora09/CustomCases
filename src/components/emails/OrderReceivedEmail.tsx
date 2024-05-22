@@ -26,7 +26,7 @@ const OrderReceivedEmail = ({
   const baseUrl =
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
-      : 'https://gotucovered.vercel.app/'
+      : 'https://gotucovered.vercel.app'
 
   return (
     <Html>
@@ -36,20 +36,18 @@ const OrderReceivedEmail = ({
         <Container style={container}>
           <Section style={message}>
             <Img
-              src={`${baseUrl}/snake-3.png`}
+              src={`${baseUrl}/step-3.png`}
               width='65'
               height='73'
-              alt='delivery snake'
+              alt='delivery'
               style={{ margin: 'auto' }}
             />
             <Heading style={global.heading}>Thank you for your order!</Heading>
             <Text style={global.text}>
-              We're preparing everything for delivery and will notify you once
-              your package has been shipped. Delivery usually takes 2 days.
+              We are currently preparing your items for delivery. Once your package has been shipped, we will notify you. Delivery typically takes 2 days.
             </Text>
             <Text style={{ ...global.text, marginTop: 24 }}>
-              If you have any questions regarding your order, please feel free
-              to contact us with your order number and we're here to help.
+             If you have any questions regarding your order, please feel free to contact us with your order number. We are here to help and ensure you have a great experience with us.
             </Text>
           </Section>
           <Hr style={global.hr} />
@@ -84,8 +82,76 @@ const OrderReceivedEmail = ({
                   paddingTop: 30,
                   paddingBottom: 30,
                 }}>
-                Please contact us if you have any questions. (If you reply to
-                this email, we won't be able to see it.)
+                Please contact us if you have any questions. 
+              </Text>
+            </Row>
+            <Row>
+              <Text
+                style={{
+                  ...footer.text,
+                  paddingTop: 30,
+                  paddingBottom: 30,
+                }}>
+                Please note that replies to this email are not monitored. For any inquiries, kindly reach out to our customer service team directly.
+              </Text>
+            </Row>
+            <Row>
+              <Text
+                style={{
+                  ...footer.text,
+                  paddingTop: 30,
+                  paddingBottom: 30,
+                }}>
+                  Thank you for choosing GotUCovered, Inc.
+              </Text>
+            </Row>
+            <Row>
+              <Text
+                style={{
+                  ...footer.text,
+                  paddingTop: 30,
+                  paddingBottom: 30,
+                }}>
+                  Best regards,
+              </Text>
+            </Row>
+            <Row>
+              <Text
+                style={{
+                  ...footer.text,
+                  paddingTop: 30,
+                  paddingBottom: 30,
+                }}>
+                  The Got'U'Covered Team.
+              </Text>
+            </Row>
+            <Hr style={global.hr} />
+            <Row>
+              <Text
+                style={{
+                  ...footer.text,
+                  paddingTop: 30,
+                  paddingBottom: 30,
+                }}>
+                  Phone: +91-7891026270
+              </Text>
+            </Row><Row>
+              <Text
+                style={{
+                  ...footer.text,
+                  paddingTop: 30,
+                  paddingBottom: 30,
+                }}>
+                  Email: contact.sujanarora@gmail.com
+              </Text>
+            </Row><Row>
+              <Text
+                style={{
+                  ...footer.text,
+                  paddingTop: 30,
+                  paddingBottom: 30,
+                }}>
+                  Website: https://gotucovered.vercel.app/
               </Text>
             </Row>
             <Row>
